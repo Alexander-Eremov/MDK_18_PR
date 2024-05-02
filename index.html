@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <p>Введите текст или URL</p>
+        <input type="text" id="qrText" placeholder="Текст или ссылка">
+        <div class="qrDesign">
+            <select name="" id="qrTextColr">
+                <option value="0-0-0">Цвет кода</option>
+                <option value="0-0-0">Черный</option>
+                <option value="255-0-0">Красный</option>
+                <option value="0-255-0">Зеленый</option>
+                <option value="0-0-255">Синий</option>
+                <option value="255-255-255">Белый</option>
+            </select>
+            <select name="" id="qrFormat">
+                <option value="png">Формат</option>
+                <option value="png">png</option>
+                <option value="gif">gif</option>
+                <option value="jpeg">jpeg</option>
+                <option value="jpg">jpg</option>
+                <option value="svg">svg</option>
+                <option value="eps">eps</option>
+            </select>
+            <select name="" id="qrBgColr">
+                <option value="255-255-255">Цвет фона</option>
+                <option value="0-0-0">Черный</option>
+                <option value="255-0-0">Красный</option>
+                <option value="0-255-0">Зеленый</option>
+                <option value="0-0-255">Синий</option>
+                <option value="255-255-255">Белый</option>
+            </select>
+        </div>
+        <div id="ImageBox">
+            <img src="" alt="" id="qrImage">
+        </div>
+        <button id="actionButton">Создать QR-код</button>
+    </div>
+</body>
+
+</html>

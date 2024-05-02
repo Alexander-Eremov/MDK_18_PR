@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+body {
+    background-color: #262a2f;
+}
+.container {
+    width: 500px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+}
+.container > p {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.container > input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #494eea;
+    outline: none;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+}
+
+.container > button {
+    width: 100%;
+    height: 50px;
+    background-color: #494eea;
+    color: #fff;
+    border: 1px solid #494eea;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 500;
+    transition: 0.4s;
+}
+.container > button:hover {
+    background-color: #fff;
+    color: #494eea;
+}
+
+#ImageBox {
+    width: 300px;
+    border-radius: 5px;
+    min-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+#ImageBox > img {
+    width: 100%;
+    padding: 10px;
+}
+
+#ImageBox.show-img {
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+
+select {
+    border: 1px solid #494eea;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.qrDesign{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.error {
+    animation: shake 0.2s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+        border: 1px solid red;
+    }
+    25% {
+        transform: translateX(3px);
+        border: 1px solid red;
+    }
+    50% {
+        transform: translateX(0);
+        border: 1px solid red;
+    }
+    75% {
+        transform: translateX(-3px);
+        border: 1px solid red;
+    }
+    100% {
+        transform: translateX(0);
+        border: 1px solid red;
+    }
+}
